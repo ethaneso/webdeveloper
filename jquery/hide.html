@@ -1,0 +1,39 @@
+<!DOCTYPE HTMl>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+    
+    <script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(this).hide();
+        });
+    });
+        
+    $(document).ready(function(){
+        $("p1").dblclick(function(){
+            $(this).hide();
+        });
+    });
+        
+    $(document).ready(function(){
+        $("#p3").mouseenter(function(){
+        alert("you entered p3!");
+    });
+    });
+    </script>
+</head>
+    
+<body>
+<P>this paragraph will disappear, if click on</P>
+<p>same here, if click</p>
+    
+    
+<p1>double click to disappear</p1>
+    
+<div id="p3">
+    this is paragraph 3</div>
+</body>
+
+</html>
