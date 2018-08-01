@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+body {
+	background: #edf0f1;
+	padding: 80px 0 0 0;
+}
+
+body, input, button {
+	font-family: sans-serif;
+}
+
+.noFill {
+	fill:none;
+}
+
+
+header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	padding: 15px;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: #25b99a;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	box-shadow: 0px 2px 4px #2c3e50;
+
+}
+
+header input {
+	width: 85%;
+	height: 90%;
+	float: left;
+	color: #fff;
+	font-size: 100%;
+	text-indent: 2px;
+	padding: 0px 60px 0 0;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background: #45d2b4;
+	border-radius: 5px;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+
+
+	-webkit-appearance: ;
+}
+
+header button {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+	border-radius: 25px;
+	background: #fff;
+	border: 8px;
+	cursor: pointer;
+}
+
+header button svg {
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+
+}
+
+header button svg .fill {
+	fill: #25b99a;
+}
+
+.container {
+	width: 100%;
+	float: left;
+	padding: 15px;
+}
+
+
+ul.todo {
+	width: 100%;
+	float: left;
+}
+
+ul.todo li {
+	width: 100%;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	font-weight: 500;
+	color: #444;
+	line-height: 22px;
+	background: #fff;
+	border-radius: 5px;
+	position: relative;
+	box-shadow: 0px 1px 2px #2c3e50;
+	margin: 0 0 10px 0;
+	padding: 14px 100px 14px 14px;
+}
+
+ul.todo li:last-of-type {
+	margin: 0;
+}
+
+.buttons {
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	top: 100px;
+	right: 15px;
+
+}
+
+.buttons button {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	border: 0px;
+	box-shadow: none;
+	outline: none;
+}
+
+.buttons button:last-of-type:before {
+	content: '';
+	width: 1px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	background: #edf0f1;
+}
+
+.buttons button svg {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -11px 0 0 -11px;
+}
+
+.buttons button.remove svg .fill {
+	fill: #c0cecb;
+}
