@@ -4,10 +4,21 @@ window.onload = function() {
 // user clicked on the add button
 document.getElementById('add').addEventListener('click', function() {
 	var value = document.getElementById('item').value;
-
-	console.log(value);
+	if (value) {addItemTodo(value);
+	}
 });
 
-	
+function addItemTodo(text) {
+	var list = document.getElementById('todo');
+
+
+	var item = document.createElement('li');
+	item.innerText = text;
+
+
+	list.appendChild(item);
+}
+
+
 
 }
